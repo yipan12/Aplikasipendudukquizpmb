@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Background"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/img1"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrasi Penduduk"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Masukan Dan Registrasikan"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_below="@+id/img1"
+        android:padding="15dp"
+        >
+        <EditText
+            android:id="@+id/etNIK"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="Masukan Nik"
+            android:paddingLeft="25dp"
+            android:background="@drawable/color_buton"
+            android:backgroundTint="@color/white"
+        />
+        <EditText
+            android:id="@+id/etNAMA"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="Masukan Nama"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/color_buton"
+            android:backgroundTint="@color/white"
+            />
+        <AutoCompleteTextView
+            android:id="@+id/etJenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:height="47dp"
+            android:paddingLeft="25dp"
+            android:hint="Pilih JK"
+            android:background="@drawable/color_buton"
+            android:backgroundTint="@color/white"/>
+
+        <EditText
+            android:id="@+id/etTempatTanggalLahir"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="Masukan Tempat Tanggal Lahir"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/color_buton"
+            android:backgroundTint="@color/white"
+            />
+        <EditText
+            android:id="@+id/etAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="Masukan Alamat Lengkap"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/color_buton"
+            android:backgroundTint="@color/white"
+            />
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="Masukan Alamat Email"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/color_buton"
+            android:backgroundTint="@color/white"
+            />
+        <EditText
+            android:id="@+id/etTelepon"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="Masukan Nomor Telepon"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/color_buton"
+            android:backgroundTint="@color/white"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kirim"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/color_buton"
+        android:width="200dp"
+        android:layout_below="@id/linear"
+        android:textColor="@color/white"
+        android:layout_marginLeft="25dp"/>
+
+
+</RelativeLayout>
